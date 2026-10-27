@@ -1,0 +1,9 @@
+{% extends "d_app/base.html" %}
+{% block page_header %}
+    <h5>欢迎来到缤纷日记的列表</h5>
+{% endblock page_header %}
+{% block content %}
+    <p>
+        <a href="{% url 'd_app:diaries' %}">这里是日记的分类大全</a>
+    </p>
+{% endblock content %}

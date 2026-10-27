@@ -1,0 +1,9 @@
+{% extends "d_app/base.html" %}
+{% block page_header %}
+    <h5>欢迎来到添加新日记类别的页面</h5>
+{% endblock page_header %}
+{% block content %}
+    <p>
+        <a href="{% url 'd_app:new_diary' %}">添加一个新的日记类别</a>
+    </p>
+{% endblock content %}

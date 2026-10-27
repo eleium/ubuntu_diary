@@ -1,0 +1,17 @@
+<!doctype=html>
+<html lang="zh-CN">
+    <head>
+        <meta Charset='utf-8'>
+        <meta name='viewport' content='width=device-width,initial-scale=1'>
+        <title>缤纷日记</title>
+        {% load django_bootstrap5 %}
+        {% bootstrap_css %}
+    </head>
+    <p>
+        <a href="{% url 'd_app:index' %}">Diary</a>
+    </p>
+</html>
+{% block page_header %}
+{% endblock page_header %}
+{% block content %}
+{% endblock content %}

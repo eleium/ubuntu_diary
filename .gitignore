@@ -1,0 +1,17 @@
+# 虚拟环境
+d_venv/
+venv/
+env/
+
+# Python 缓存文件
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Django 数据库（如果你不想把本地测试数据传上去，就加上它）
+db.sqlite3
+
+# 其他系统或编辑器生成的文件
+.DS_Store
+.idea/
+.vscode/

@@ -1,0 +1,7 @@
+{% extends "d_app.html" %}
+{% block page_header %}
+    <h5>欢迎来到已经写好的 {{ diary.title }}的日记正文</h5>
+{% endblock page_header %}
+{% block content %}
+    <a href="{% url 'd_app:diary diary_id=diary.id' %}">写下关于{{ diary.title }}的日记正文。</a>
+{% endblock content %}
