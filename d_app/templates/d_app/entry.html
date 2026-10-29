@@ -1,0 +1,9 @@
+{% extends "d_app/base.html" %}
+{% block page_header %}
+    <h5>欢迎来到写日记正文页面</h5>
+{% endblock page_header %}
+{% block content %}
+    <p>
+        <a href="{% url 'd_app:entry' diary_id=diary.id,entry_id=entry.id %}">请看正文</a>
+    </p>
+{% endblock content %}

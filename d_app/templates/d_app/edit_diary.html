@@ -1,0 +1,9 @@
+{% extends "d_app/base.html" %}
+{% block page_header %}
+    <h5>欢迎来到编辑日记种类名称页面</h5>
+{% endblock page_header %}
+{% block content %}
+    <p>
+        <a href="{% url 'd_app:edit_diary' diary_id=diary.id %}">进入编辑改名模式</a>
+    </p>
+{% endblock content %}

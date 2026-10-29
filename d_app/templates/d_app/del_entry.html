@@ -1,0 +1,15 @@
+{% extends "d_app/base.html" %}
+{% block page_header %}
+    <h5>欢迎来到删除日记正文页面</h5>
+{% endblock page_header %}
+{% block content %}
+    <p>
+        <form action="{% url 'd_app:del_entry' entry_id=entry.id diary_id=diary.id %}"
+              method='post'>
+            {% csrf_token %}
+            {{ form.as_div }}
+            <button type='submit'>确认删除</button>
+            <a href="{% url 'd_app:diary' diary_id=diary.id %}">取消删除</a>
+        </form>
+    </p>
+{% endblock content %}

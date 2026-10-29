@@ -3,7 +3,12 @@
     <h5>欢迎来到缤纷日记的列表</h5>
 {% endblock page_header %}
 {% block content %}
-    <p>
-        <a href="{% url 'd_app:diaries' %}">这里是日记的分类大全</a>
-    </p>
+    <ul>
+        {% for diary in diaries %}
+            <li>
+                <a href="{% url 'd_app:diary' diary_id=diary.id %}">进入{{ diary.title }}正文</a></li>
+        {% empty %}
+            <li>请创建日记种类</li>
+        {% endfor %}
+    </ul>
 {% endblock content %}

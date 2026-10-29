@@ -1,0 +1,13 @@
+{% extends "d_app/base.html" %}
+{% block page_header %}
+    <h5>欢迎来到{{ diary.text }}的新增日记正文页面</h5>
+{% endblock page_header %}
+{% block content %}
+    <p>
+        <form action="{% url 'd_app:new_entry',diary_id=diary.id %}" method='post'>
+            {% csrf_token %}
+            {{ form.as_div }}
+            <button type='submit'>确认新增正文。</button>
+        </form>
+    </p>
+{% endblock content %}
