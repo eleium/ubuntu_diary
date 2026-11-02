@@ -15,3 +15,6 @@ db.sqlite3
 .DS_Store
 .idea/
 .vscode/
+
+#一个通用的进入项目后自动进入该项目的虚拟环境
+.envrc
